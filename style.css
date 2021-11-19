@@ -1,0 +1,159 @@
+body{
+    font-family: 'Permanent Marker', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    width: 100%;    
+    margin: 0px;
+    padding: 0px;
+    
+}
+.conteiner{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.main_text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Sprint_first{
+    width: 80%;
+    margin: 0 auto;
+}
+.Leson{
+   width: 300px;
+   height: 150px;
+   margin-left: 40px;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 0 0 20px rgba(0,0,0,0.5);
+   border-radius: 7px; background-color: rgb(255, 255, 255); 
+   display: flex;
+   justify-content: center;
+}
+.button_text_div{
+    width: 250px;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    margin-top: 10px;
+    width: 80px;
+    height: 25px;
+}
+.text_firest_sprint{
+    width: 100%;
+    margin-left: 40px;
+}
+a{
+    text-decoration: none;
+}
+.up{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.down{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.Sprint_second{
+    width: 80%;
+    margin-top: 50px;
+    margin: 0 auto;
+}
+.text_second_sprint{
+    width: 100%;
+    margin-left: 40px;
+}
+
+
+input{
+    height: 0px;
+}
+input::before{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(./img/3.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+label.btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2; 
+}
+input[type="checkbox"]:checked + div{
+    background-image: url(./img/1.jpg);
+}
+h1{
+    color: rgb(179, 0, 0);
+}
+.up_text{
+    color: rgb(179, 0, 0);
+}
+
+@media screen and (max-width: 414px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: left;
+    }
+    .Sprint_first{
+        width: 100%;
+        height: 900px;
+    }
+    .Sprint_second{
+        width: 100%;
+        height: 900px;
+        margin-top: 20px;
+        display: block;
+    }
+    .comteiner{
+        width: 90%;
+    }
+    .Leson{
+        width: 250px;
+        height: 100px;
+        margin-top: 20px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    p{
+        font-size: 12px;
+    }
+    hr{
+        width: 150px;
+    }
+    .up{
+        flex-direction: column;
+        height: 350px;   
+    }
+    .down{
+        flex-direction: column;
+        height: 350px;
+    }
+    
+}
